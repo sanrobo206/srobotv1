@@ -1,11 +1,11 @@
 ---
 layout: home
-title: sROBOTV1 - Technical Deep Dive
+title: sROBOTV1 - Technical Analysis
 ---
 
 <div style="width: 100%; margin: 0; padding: 80px 40px; font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #111; background-color: #ffffff; box-sizing: border-box; line-height: 1.8;">
 
-  <!-- Main Title & Subtitle -->
+  <!-- Header -->
   <header style="text-align: center; margin-bottom: 80px;">
     <h1 style="font-size: 4.5rem; font-weight: 800; color: #000; margin-bottom: 10px; letter-spacing: -0.05em;">
       sROBOTV1
@@ -22,36 +22,36 @@ title: sROBOTV1 - Technical Deep Dive
 
   <hr style="border: 0; border-top: 1px solid #eaeaea; margin: 60px 0;">
 
-  <!-- SECTION 1: Expanded Technical Overview -->
+  <!-- SECTION 1: Deep Technical Overview -->
   <section style="max-width: 950px; margin: 0 auto 100px auto;">
     <h2 style="font-size: 2.8rem; font-weight: 700; color: #000; margin-bottom: 40px; text-align: center; letter-spacing: -0.03em;">
-      Project Overview
+      Technical Overview
     </h2>
     <div style="font-size: 1.35rem; color: #333; text-align: justify;">
-      The <b>sROBOTV1</b> represents a significant leap in desktop-scale robotic kinematics, moving beyond the constraints of traditional industrial design. While the standard 6-axis configuration is common, it frequently encounters "singularities"—mathematical dead zones where the arm loses the ability to move in certain directions. 
+      The <b>sROBOTV1</b> is a sophisticated <b>seven-axis</b> robotic manipulator engineered to overcome the inherent limitations of traditional industrial kinematics. Most standard robotic arms utilize a 6-axis configuration, which often suffers from "mathematical singularities"—specific joint orientations where the arm loses a degree of freedom and becomes momentarily immobile in certain directions. 
       <br><br>
-      By integrating a <b>redundant 7th axis</b>, the sROBOTV1 bypasses these limitations entirely. This added Degree of Freedom (DoF) provides the arm with "elbow redundancy," allowing it to reach around obstacles and maintain its end-effector position while changing its internal joint configuration. This level of dexterity is crucial for complex assembly tasks and high-precision manipulation in restricted environments where a standard 6-axis arm would be geometrically locked.
+      By integrating a <b>redundant 7th axis</b>, the sROBOTV1 introduces "elbow redundancy." This architectural choice allows the arm to reach around environmental obstacles and navigate tight workspaces while keeping the end-effector (gripper) perfectly stationary. This level of dexterity is critical for advanced manipulation tasks, providing the robot with a human-like range of motion that can access complex geometric positions previously considered impossible for desktop-scale systems. The 7-axis design ensures that the workspace is not just larger, but fundamentally more usable for high-precision applications.
     </div>
   </section>
 
-  <!-- SECTION 2: Expanded Mechanical Engineering & Stability -->
+  <!-- SECTION 2: Comprehensive Mechanical Engineering & Stability -->
   <section style="max-width: 950px; margin: 0 auto 100px auto; background: #fcfcfc; padding: 70px; border-radius: 24px; border: 1px solid #f1f1f1;">
     <h2 style="font-size: 2.5rem; font-weight: 700; color: #000; margin-bottom: 35px; text-align: left; letter-spacing: -0.02em;">
-      Advanced Mechanical Stability
+      Mechanical Integrity & Error Mitigation
     </h2>
     <div style="font-size: 1.3rem; color: #444; line-height: 1.9;">
-      In the field of high-leverage robotics, precision is not just about the motors—it is a battle against <b>cumulative error propagation</b>. Through extensive testing of the sROBOTV1 prototype, it was determined that the most critical failure point in long-reach accuracy is <b>base deflection</b>. 
+      The primary challenge in long-reach robotic engineering is the management of <b>cumulative error propagation</b>. Through rigorous testing of the sROBOTV1 prototype, it was identified that the structural integrity of the base is the single most critical factor in system accuracy. 
       <br><br>
-      Mathematically, a mere <b>1-degree deviation</b> or mechanical "play" at the foundation of the robot results in an exponential increase in error as it travels through the kinematic chain. By the time this deviation reaches the gripper, it manifests as a massive, unpredictable shift that renders precise manipulation impossible. 
+      Due to the mechanical leverage of a multi-segment arm, a microscopic <b>1-degree of deflection</b> or "play" at the foundation is amplified exponentially as it travels through the kinematic chain. By the time this deviation reaches the gripper side, it manifests as a massive, unpredictable displacement that compromises sub-millimeter precision. 
       <br><br>
-      To neutralize this effect, the sROBOTV1 employs a rigorous mechanical stabilization strategy: <b>precision bearings have been integrated into nearly every moving joint</b> and junction of the assembly. This "bearing-dense" architecture ensures that all 7 axes operate with near-zero friction and zero structural wobble. By replacing simple bushings or direct-fit joints with high-grade ball bearings, the system maintains industrial-grade rigidity and sub-millimeter repeatability across its entire workspace.
+      To neutralize these forces, the sROBOTV1 features a "bearing-dense" design philosophy. <b>Precision ball bearings have been integrated into nearly every moving joint</b> and structural junction throughout the entire 7-axis assembly. By replacing standard bushings or direct-fit plastic interfaces with high-grade steel bearings, the design achieves near-zero friction and absolute zero structural wobble. This ensures that the arm remains rigid and highly repeatable under load, providing industrial-grade stability in a compact, accessible form factor. Every rotation is smooth, and every joint is locked against lateral movement, resulting in a system that maintains its calibration even through high-speed maneuvers.
     </div>
   </section>
 
-  <!-- SECTION 3: Design Philosophy -->
+  <!-- SECTION 3: Final Design Philosophy -->
   <section style="max-width: 950px; margin: 0 auto 100px auto;">
     <div style="font-size: 1.35rem; color: #333; text-align: justify;">
-      The design philosophy of the <b>sROBOTV1</b> focuses on accessibility without compromising on professional-grade capabilities. Every component was engineered to maximize the strength-to-weight ratio, ensuring that the 7-axis movement remains fluid even at high speeds. The resulting system is not just a robotic arm, but a robust platform for advanced motion control research and automated task execution.
+      The <b>sROBOTV1</b> project proves that professional-grade robotics can be achieved through thoughtful mechanical optimization. By prioritizing joint rigidity and kinematic redundancy, this arm serves as a powerful platform for research into motion planning, obstacle avoidance, and high-precision automation.
     </div>
   </section>
 
