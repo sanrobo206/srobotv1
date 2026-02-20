@@ -1,6 +1,6 @@
 ---
 layout: home
-title: sROBOTV1 - Technical Analysis
+title: sROBOT v.1 - Technical Analysis
 ---
 
 <div style="width: 100%; margin: 0; padding: 80px 40px; font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #111; background-color: #ffffff; box-sizing: border-box; line-height: 1.8;">
