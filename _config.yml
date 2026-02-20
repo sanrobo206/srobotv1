@@ -1,0 +1,14 @@
+# Site Settings
+title: srobotv1
+description: 7-Axis High-Precision Robotic Manipulator by Sanatan Sinha
+remote_theme: pages-themes/minimal
+plugins:
+  - jekyll-remote-theme
+
+# Website URL Configuration
+url: "https://sanrobo206.github.io" # Replace with your GitHub username if different
+baseurl: "/srobotv1"               # Replace with your actual repository name
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
