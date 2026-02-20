@@ -8,7 +8,7 @@ title: sROBOT v.1 - Technical Analysis
   <!-- Header -->
   <header style="text-align: center; margin-bottom: 80px;">
     <h1 style="font-size: 4.5rem; font-weight: 800; color: #000; margin-bottom: 10px; letter-spacing: -0.05em;">
-      sROBOTV1
+      sROBOT v.1
     </h1>
     <p style="font-size: 1.8rem; color: #666; font-weight: 400; margin-top: 0;">
       by Sanatan Sinha
