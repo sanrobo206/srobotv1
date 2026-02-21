@@ -1,63 +1,126 @@
 ---
 layout: home
-title: sROBOT v.1 - Technical Analysis
+title: Sanatan - Projects
 ---
 
-<div style="width: 100%; margin: 0; padding: 80px 40px; font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #111; background-color: #ffffff; box-sizing: border-box; line-height: 1.8;">
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-  <!-- Header -->
-  <header style="text-align: center; margin-bottom: 80px;">
-    <h1 style="font-size: 4.5rem; font-weight: 800; color: #000; margin-bottom: 10px; letter-spacing: -0.05em;">
-      sROBOT v.1
+  .animate-section {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+  }
+
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+  .delay-3 { animation-delay: 0.6s; }
+
+  body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .project-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    padding: 50px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 18px 40px;
+    background: #000000;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .cta-button:hover {
+    background: #333;
+    transform: scale(1.05);
+  }
+</style>
+
+<div style="width: 100%; margin: 0; padding: 100px 20px; font-family: 'Google Sans', -apple-system, sans-serif; box-sizing: border-box;">
+
+  <header class="animate-section" style="text-align: center; margin-bottom: 100px;">
+    <h1 style="font-size: 4.5rem; font-weight: 800; color: #111; margin-bottom: 10px; letter-spacing: -0.06em;">
+      Sanatan <span style="color: #666;">-</span> Projects
     </h1>
-    <p style="font-size: 1.8rem; color: #666; font-weight: 400; margin-top: 0;">
-      by Sanatan Sinha
-    </p>
+    <p style="font-size: 1.6rem; color: #888; font-weight: 400; letter-spacing: 1px;">BY SANATAN SINHA</p>
   </header>
 
-  <!-- Hero Image -->
-  <div style="text-align: center; margin-bottom: 80px; max-width: 1100px; margin-left: auto; margin-right: auto;">
-    <img src="Screenshot from 2026-02-20 13-59-47.png" alt="sROBOTV1 7-Axis Arm CAD" style="width: 100%; border-radius: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.12); border: 1px solid #eee;">
+  <!-- Project 1 Section -->
+  <div class="animate-section delay-1" style="max-width: 1100px; margin: 0 auto 100px auto;">
+    <section class="project-card">
+      <h2 style="font-size: 2.8rem; font-weight: 700; color: #000; margin-bottom: 40px; text-align: center;">srobotv1</h2>
+      <div style="text-align: center; margin-bottom: 45px;">
+        <img src="Screenshot from 2026-02-20 13-59-47.jpeg" alt="srobotv1" style="width: 100%; max-width: 950px; border-radius: 16px; box-shadow: 0 15px 45px rgba(0,0,0,0.1);">
+      </div>
+      <div style="font-size: 1.25rem; color: #444; text-align: justify; padding: 0 5%; line-height: 1.8;">
+        The <b>srobotv1</b> is an advanced 7-axis robotic manipulator engineered for maximum stability and dexterity. By integrating <b>bearings throughout the entire assembly</b>, I eliminated the 1-degree base deflection that typically results in massive precision errors at the gripper.
+        <br><br>
+        <div style="text-align: center; margin-top: 40px;">
+          <!-- CORRECTED LINK 1 WITH PATH -->
+          <a href="https://sanrobo206.github.io/srobotv1/" class="cta-button">EXPLORE TECHNICAL ANALYSIS</a>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <hr style="border: 0; border-top: 1px solid #eaeaea; margin: 60px 0;">
+  <!-- Project 2 Section -->
+  <div class="animate-section delay-2" style="max-width: 1100px; margin: 0 auto 100px auto;">
+    <section class="project-card">
+      <h2 style="font-size: 2.8rem; font-weight: 700; color: #000; margin-bottom: 40px; text-align: center;">Mobile Fire Detection System</h2>
+      <div style="text-align: center; margin-bottom: 45px;">
+        <img src="rover-cad.jpeg" alt="Mobile Fire Detection System Rover" style="width: 100%; max-width: 950px; border-radius: 16px; box-shadow: 0 15px 45px rgba(0,0,0,0.1);">
+      </div>
+      <div style="font-size: 1.25rem; color: #444; text-align: justify; padding: 0 5%; line-height: 1.8;">
+        The <b>Mobile Fire Detection System</b> is an autonomous safety solution designed for rapid response in high-risk environments. This project integrates multi-sensor data fusion to identify heat signatures and smoke patterns in real-time.
+        <br><br>
+        <div style="text-align: center; margin-top: 40px;">
+          <!-- CORRECTED LINK 2 WITH PATH -->
+          <a href="https://sanrobo206.github.io/mfds/" class="cta-button">EXPLORE TECHNICAL ANALYSIS</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-  <!-- SECTION 1: Deep Technical Overview -->
-  <section style="max-width: 950px; margin: 0 auto 100px auto;">
-    <h2 style="font-size: 2.8rem; font-weight: 700; color: #000; margin-bottom: 40px; text-align: center; letter-spacing: -0.03em;">
-      Technical Overview
-    </h2>
-    <div style="font-size: 1.35rem; color: #333; text-align: justify;">
-      The <b>sROBOTV1</b> is a sophisticated <b>seven-axis</b> robotic manipulator engineered to overcome the inherent limitations of traditional industrial kinematics. Most standard robotic arms utilize a 6-axis configuration, which often suffers from "mathematical singularities"—specific joint orientations where the arm loses a degree of freedom and becomes momentarily immobile in certain directions. 
-      <br><br>
-      By integrating a <b>redundant 7th axis</b>, the sROBOTV1 introduces "elbow redundancy." This architectural choice allows the arm to reach around environmental obstacles and navigate tight workspaces while keeping the end-effector (gripper) perfectly stationary. This level of dexterity is critical for advanced manipulation tasks, providing the robot with a human-like range of motion that can access complex geometric positions previously considered impossible for desktop-scale systems. The 7-axis design ensures that the workspace is not just larger, but fundamentally more usable for high-precision applications.
-    </div>
-  </section>
+  <!-- Project 3 Section -->
+  <div class="animate-section delay-3" style="max-width: 1100px; margin: 0 auto 100px auto;">
+    <section class="project-card">
+      <h2 style="font-size: 2.8rem; font-weight: 700; color: #000; margin-bottom: 40px; text-align: center;">sHUMANOID v.1</h2>
+      <div style="font-size: 1.25rem; color: #444; text-align: justify; padding: 0 5%; line-height: 1.8;">
+        The <b>sHUMANOID v.1</b> is a mobile humanoid platform engineered for complex manipulation and high-mobility navigation. Built entirely from a robust <b>extruded aluminum</b> frame, the robot features a <b>mecanum wheel</b> base for omnidirectional movement. 
+        <br><br>
+        For high-dexterity interaction, the system utilizes a <b>bimanual setup</b> incorporating two <b>sROBOT v.1</b> robotic arms, allowing for coordinated dual-arm tasks and advanced research into mobile manipulation.
+        <br><br>
+        <div style="text-align: center; margin-top: 40px;">
+          <!-- CORRECTED LINK 3 WITH PATH -->
+          <a href="https://sanrobo206.github.io/shumanoidv1" class="cta-button">DIVE DEEPER</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-  <!-- SECTION 2: Comprehensive Mechanical Engineering & Stability -->
-  <section style="max-width: 950px; margin: 0 auto 100px auto; background: #fcfcfc; padding: 70px; border-radius: 24px; border: 1px solid #f1f1f1;">
-    <h2 style="font-size: 2.5rem; font-weight: 700; color: #000; margin-bottom: 35px; text-align: left; letter-spacing: -0.02em;">
-      Mechanical Integrity & Error Mitigation
-    </h2>
-    <div style="font-size: 1.3rem; color: #444; line-height: 1.9;">
-      The primary challenge in long-reach robotic engineering is the management of <b>cumulative error propagation</b>. Through rigorous testing of the sROBOTV1 prototype, it was identified that the structural integrity of the base is the single most critical factor in system accuracy. 
-      <br><br>
-      Due to the mechanical leverage of a multi-segment arm, a microscopic <b>1-degree of deflection</b> or "play" at the foundation is amplified exponentially as it travels through the kinematic chain. By the time this deviation reaches the gripper side, it manifests as a massive, unpredictable displacement that compromises sub-millimeter precision. 
-      <br><br>
-      To neutralize these forces, the sROBOTV1 features a "bearing-dense" design philosophy. <b>Precision ball bearings have been integrated into nearly every moving joint</b> and structural junction throughout the entire 7-axis assembly. By replacing standard bushings or direct-fit plastic interfaces with high-grade steel bearings, the design achieves near-zero friction and absolute zero structural wobble. This ensures that the arm remains rigid and highly repeatable under load, providing industrial-grade stability in a compact, accessible form factor. Every rotation is smooth, and every joint is locked against lateral movement, resulting in a system that maintains its calibration even through high-speed maneuvers.
-    </div>
-  </section>
-
-  <!-- SECTION 3: Final Design Philosophy -->
-  <section style="max-width: 950px; margin: 0 auto 100px auto;">
-    <div style="font-size: 1.35rem; color: #333; text-align: justify;">
-      The <b>sROBOTV1</b> project proves that professional-grade robotics can be achieved through thoughtful mechanical optimization. By prioritizing joint rigidity and kinematic redundancy, this arm serves as a powerful platform for research into motion planning, obstacle avoidance, and high-precision automation.
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer style="margin-top: 150px; padding-top: 50px; border-top: 1px solid #eee; text-align: center; color: #aaa; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px;">
-    Created by <span style="font-weight: 700; color: #000;">Sanatan Sinha</span>
+  <footer class="animate-section" style="margin-top: 150px; text-align: center; color: #aaa; font-size: 1rem; padding-bottom: 60px; text-transform: uppercase; letter-spacing: 3px;">
+    Created by <span style="font-weight: 700; color: #111;">Sanatan Sinha</span>
   </footer>
 
 </div>
